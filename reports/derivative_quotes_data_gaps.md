@@ -23,6 +23,7 @@ metadata.
 | 7 | No greeks at all | 2019 → 2024 | `mfo` |
 | 8 | Classification columns blank | 2019-12 → 2024-12 (59.3M rows) | `mfo`, all of `cds` |
 | 9 | `expiry_date` unusable | all years (95–97% NULL) | `nfo`, `bfo` |
+| 10 | **`index_quotes` 4-month hole** | **2025-09-08 → 2025-12-31** (79 trading days) | `market.index_quotes` (see follow-up) |
 
 Clean bills of health: **no duplicate `(symbol, ts)` rows** in any year, and
 **zero missing whole trading days for `nfo`** across 1,646 sessions.
@@ -289,3 +290,83 @@ with `volume > 1e12` run 0.006–0.047% per year across 2020–2023 plus `mfo`, 
 - Backfill priorities, highest value first: (1) the 8 missing days to 2026-09-09,
   (2) `mfo` December 2023, (3) the 2024-12-24/27/31 afternoons, (4) the 2025-10-06
   delta regression.
+
+---
+
+# Follow-up: targeted probe of June–December 2025
+
+Prompted by a report that data was missing in this window. **`derivative_quotes`
+is complete for June–December 2025.** The four-month hole that does exist in that
+window is in a *different* table, `market.index_quotes`.
+
+## `derivative_quotes` June–Dec 2025 — six independent tests, all clean
+
+| test | result |
+|---|---|
+| Missing trading days (`nfo`) | **0** of 147 sessions |
+| Missing contract-days vs bhavcopy | **4** of 4,867,649 (all on 2025-11-20) |
+| Missing expiry series (exact weekly match) | **0** of 32,143 `(day, underlying)` pairs |
+| Sessions with intraday minute holes | **0** |
+| Sessions with partial-universe dropout | **0** |
+| Underlyings that vanish mid-window | **0** unexplained (25 delistings, all matching bhavcopy) |
+
+Six weekdays have no `nfo` data — 2025-08-15, 08-27, 10-02, 10-22, 11-05, 12-25 —
+and all six are NSE holidays absent from the official bhavcopy too.
+
+The expiry-series test closes the blind spot flagged in §9. Rather than the
+month-collapsed key, it extracts the real expiry from the symbol string
+(`substring(symbol, length(underlying)+1, 5)` yields `26SEP` for monthlies and
+`25D16` for weeklies) and compares the count per underlying per day against the
+bhavcopy's distinct `expiry_date` count. Validated on NIFTY/2025-12-15: 18 codes
+vs 18 expiry dates. Across all 32,143 pairs in the window, `derivative_quotes`
+never has fewer expiries than the official record.
+
+The 25 underlyings whose data stops mid-window (ACC, M&MFIN, MGL, AARTIIND,
+TATACOMM, HINDCOPPER, CHAMBLFERT, PEL, BALKRISIND, BSOFT on 2025-07-31; SJVN,
+GRANULES, IRB, CESC, JSL, ABFRL, POONAWALLA, ATGL on 2025-08-28; TATACHEM
+2025-09-30; TATAMOTORS 2025-10-28; IGL 2025-11-25; CYIENT, NCC, TITAGARH, HFCL
+2025-12-30) each stop on precisely the day the NSE bhavcopy stops carrying them —
+SEBI's trimming of the F&O universe, not a data gap.
+
+### Two genuine but minor anomalies in the window
+
+- **2025-12-15** runs at 63% of the month's normal per-minute row rate
+  (11,982 vs 19,120 rows/min). All 375 core minutes are present and no contract
+  is missing, so it is thin rather than absent.
+- **2025-12-30** carries 38,301 distinct symbols against a typical ~72,000. This
+  is *not* lost data: `derivative_quotes` normally carries roughly twice the
+  official contract count because a post-close batch at 16:33–17:02 IST pads in
+  ~32,000 never-traded strikes as empty rows (`close=0, volume=0,
+  open_interest=0`). On 2025-12-30 that padding batch did not run, leaving 38,301
+  — which matches the bhavcopy's 38,298 almost exactly. The day is arguably the
+  most accurate in the month.
+
+That padding batch is worth knowing about generally: on a normal day only
+~11,700 symbols get a full-session minute series, ~29,100 get partial coverage,
+and ~32,400 exist solely as a single empty end-of-day row. Counting
+`uniqExact(symbol)` therefore overstates real coverage by about 2×.
+
+## The actual four-month gap: `market.index_quotes`
+
+| | |
+|---|---|
+| Last good day | **2025-09-05** |
+| Next day with data | **2026-01-01** |
+| **Missing** | **2025-09-08 → 2025-12-31 — 79 NSE trading days** |
+
+September 2025 is itself only partial (5 days, 128,962 rows against a normal
+~500,000/month); October, November and December 2025 have **no partitions at
+all**. This is by far the largest contiguous hole anywhere in the `market`
+database and it sits squarely in the reported window.
+
+Coverage also shrinks permanently across the gap: **68 index symbols before,
+51 after**. Seventeen never return — codes `-102, -103, -104, -105, -106, -110,
+-113, -114, -115, -117, -119, -120, -121, -130, -131, -132, -133`.
+
+Two further problems in the same table: row volume never recovers to pre-gap
+levels (~590k/month in early 2025 vs ~380k/month in 2026), and everything from
+**2026-09 onward is junk** — 29 to 103 rows per month, scattered across dates
+running to December 2029.
+
+`equity_quotes` and `dhan_option_minute` are continuous through the window; only
+`index_quotes` is affected.
