@@ -1,0 +1,148 @@
+date,table,segment,kind,note
+2021-02-24,derivative_quotes,nfo,partial,dead after 12:58 IST (169/375 min)
+2021-07-22,derivative_quotes,nfo,partial,nothing 10:24-12:08 (270/375 min)
+2022-10-06,derivative_quotes,nfo,partial,no data before 09:35 IST (355/375 min)
+2023-06-13,derivative_quotes,nfo,partial,34 holes (186/375 min)
+2023-06-14,derivative_quotes,nfo,partial,51 holes (252/375 min)
+2023-06-15,derivative_quotes,nfo,partial,49 holes (229/375 min)
+2023-06-19,derivative_quotes,nfo,partial,53 holes (236/375 min)
+2023-07-24,derivative_quotes,nfo,partial,58 holes (279/375 min)
+2023-07-25,derivative_quotes,nfo,partial,nothing 12:29-14:24 (224/375 min)
+2023-07-26,derivative_quotes,nfo,partial,39 holes (289/375 min)
+2023-07-27,derivative_quotes,nfo,partial,nothing 12:07-14:47 (203/375 min)
+2023-07-28,derivative_quotes,nfo,partial,shredded from open (190/375 min)
+2023-08-03,derivative_quotes,nfo,partial,shredded from open (257/375 min)
+2023-08-04,derivative_quotes,nfo,partial,shredded from open (268/375 min)
+2023-08-07,derivative_quotes,nfo,partial,nothing 12:15-12:55 (334/375 min)
+2023-12-01,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-04,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-05,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-06,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-07,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-08,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-11,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-12,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-13,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-14,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-15,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-18,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-19,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-20,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-21,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-22,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-26,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-27,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-28,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2023-12-29,derivative_quotes,mfo,absent,"whole month absent; (mfo,202312) partition missing"
+2024-09-13,derivative_quotes,mfo,absent,single day absent; 2024-09-12 also truncated
+2024-10-03,derivative_quotes,nfo,partial,no data before 14:08 IST (81/375 min)
+2024-12-24,derivative_quotes,nfo,partial,ends 12:58 IST (224/375 min)
+2024-12-27,derivative_quotes,nfo,partial,ends 13:34 IST (259/375 min)
+2024-12-31,derivative_quotes,nfo,partial,ends 13:00 IST (226/375 min)
+2025-01-30,derivative_quotes,bfo,absent,single days absent
+2025-01-31,derivative_quotes,bfo,absent,single days absent
+2025-04-28,derivative_quotes,nfo,partial,ragged open (351/375 min)
+2025-09-08,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-09,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-10,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-11,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-12,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-15,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-16,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-17,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-18,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-19,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-22,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-23,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-24,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-25,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-26,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-29,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-09-30,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-01,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-03,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-06,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-07,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-08,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-09,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-10,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-13,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-14,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-15,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-16,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-17,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-20,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-21,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-23,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-24,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-27,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-28,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-29,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-30,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-10-31,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-03,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-04,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-06,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-07,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-10,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-11,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-12,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-13,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-14,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-17,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-18,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-19,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-20,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-21,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-24,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-25,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-26,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-27,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-11-28,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-01,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-02,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-03,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-04,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-05,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-08,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-09,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-10,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-11,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-12,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-15,derivative_quotes,nfo,partial,all 375 min present but 63% of normal row rate
+2025-12-15,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-16,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-17,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-18,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-19,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-22,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-23,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-24,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-26,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-29,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-30,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2025-12-31,index_quotes,-,absent,4-month hole 2025-09-08 -> 2025-12-31
+2026-08-31,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-08-31,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-08-31,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-01,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-01,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-01,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-02,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-02,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-02,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-03,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-03,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-03,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-04,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-04,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-04,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-07,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-07,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-07,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-08,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-08,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-08,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
+2026-09-09,derivative_quotes,bfo,absent,feed stopped after 2026-08-28
+2026-09-09,derivative_quotes,mfo,absent,feed stopped after 2026-08-28
+2026-09-09,derivative_quotes,nfo,absent,feed stopped after 2026-08-28
